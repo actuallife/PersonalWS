@@ -328,3 +328,9 @@ footer .container { display: flex; justify-content: space-between; gap: 16px; fl
 
 /* Cards laid out in grids should not inherit stacked-card spacing */
 .modules .card, .grid-3 .card, .research-grid .card, .contact-grid .card { margin-top: 0; }
+
+/* ORCID */
+.contact-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 780px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-card .ic.orcid-ic { background: transparent; }
+.contact-card .ic.orcid-ic svg { width: 32px; height: 32px; }
